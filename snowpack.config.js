@@ -9,6 +9,21 @@ module.exports = {
     '@snowpack/plugin-typescript',
     '@prefresh/snowpack',
     '@snowpack/plugin-sass',
+    [
+      '@snowpack/plugin-webpack',
+      {
+        /* ... */
+        outputPattern: {
+          js: 'js/checkout-bundle.js',
+          css: 'css/checkout-bundle.css',
+        },
+        extendConfig: (config) => {
+          delete config.optimization.splitChunks;
+          delete config.optimization.runtimeChunk;
+          return config;
+        },
+      },
+    ],
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
