@@ -1,7 +1,7 @@
 import { h, render } from 'preact';
 import 'preact/devtools';
-import App from './App.js';
-import './index.css';
+import  './index.css';
+import App from './modules/cart/App.js';
 
 const root = document.getElementById('root')
 

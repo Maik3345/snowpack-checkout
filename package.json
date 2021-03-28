@@ -1,4 +1,5 @@
 {
+  "name": "snowpack-checkout",
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
@@ -7,6 +8,7 @@
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
+    "@snowpack/plugin-sass": "^1.4.0",
     "preact": "^10.0.0"
   },
   "devDependencies": {

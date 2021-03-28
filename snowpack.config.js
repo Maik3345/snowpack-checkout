@@ -8,6 +8,7 @@ module.exports = {
     '@snowpack/plugin-dotenv',
     '@snowpack/plugin-typescript',
     '@prefresh/snowpack',
+    '@snowpack/plugin-sass',
   ],
   routes: [
     /* Enable an SPA Fallback in development: */
